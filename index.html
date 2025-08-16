@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trimate Consultancy - Overseas Education & Work Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .country-card {
+            transition: all 0.3s ease;
+        }
+        .country-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #2563eb;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .active-nav::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-blue-600 text-white p-2 rounded-lg mr-3">
+                    <i class="fas fa-globe text-2xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-800">Trimate <span class="text-blue-600">Consultancy</span></h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link active-nav text-blue-600 font-medium">Home</a>
+                <a href="#countries" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Countries</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-blue-600 font-medium">About Us</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-blue-600 font-medium">Home</a>
+                <a href="#countries" class="text-gray-600 hover:text-blue-600">Countries</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Trimate Consultancy</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Your Trusted Partner for Overseas Education and Work Opportunities</h2>
+                <p class="text-lg mb-8 text-blue-100">We specialize in helping students and professionals achieve their dreams of studying and working abroad with our expert guidance and comprehensive services.</p>
+                <a href="#countries" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">Explore Countries</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Global Education" class="rounded-lg shadow-2xl max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Section -->
+    <section id="countries" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Available Opportunities</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Explore our current visa and study programs in different countries. We're constantly adding new opportunities.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Romania Card -->
+                <div class="country-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+                    <div class="bg-blue-600 text-white py-3 px-6">
+                        <h3 class="text-xl font-bold">Romania - Student Visa</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-500">Total Cost</p>
+                                <p class="font-semibold">14–15 lakh PKR</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Advance Payment</p>
+                                <p class="font-semibold">1.5 lakh PKR <span class="text-xs text-red-500">(Non-refundable in case visa rejection)</span></p>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-bold text-gray-700 mb-2">Documents Required:</h4>
+                        <ul class="list-disc pl-5 space-y-1 mb-6 text-gray-700">
+                            <li>Secondary School Certificate + DMC</li>
+                            <li>Higher Secondary School Certificate + DMC</li>
+                            <li>FRC (Family Registration Certificate) + Birth Certificate</li>
+                            <li>Police Clearance Certificate</li>
+                            <li class="font-semibold">For Master's applicants (additional):</li>
+                            <li class="pl-4">Bachelor's Degree Certificate + Transcript</li>
+                        </ul>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-1">Note:</h4>
+                            <p class="text-blue-700">All documents must be attested by IBCC and MOFA, and must have an apostille.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Germany Card -->
+                <div class="country-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+                    <div class="bg-blue-600 text-white py-3 px-6">
+                        <h3 class="text-xl font-bold">Germany - Open Work Permit (Done Base)</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-500">Total Cost</p>
+                                <p class="font-semibold">48 lakh PKR</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Advance Payment</p>
+                                <p class="font-semibold">5 lakh PKR</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Processing Time</p>
+                                <p class="font-semibold">6 months</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Visa Duration</p>
+                                <p class="font-semibold">1–2 years</p>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-bold text-gray-700 mb-2">Requirements:</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>Valid passport</li>
+                            <li>Professional qualifications or work experience</li>
+                            <li>Health insurance coverage</li>
+                            <li>Proof of financial means</li>
+                            <li>Clean criminal record</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Country Button (for future expansion) -->
+            <div class="text-center mt-12">
+                <button id="add-country-btn" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition duration-300 hidden">
+                    <i class="fas fa-plus mr-2"></i> Add New Country
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Trimate Consultancy</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">Our Mission</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        At Trimate Consultancy, we are committed to providing reliable and professional guidance to students and professionals seeking overseas education and work opportunities. Our team of experienced consultants works tirelessly to ensure our clients receive the best possible advice and support throughout their journey.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        With years of experience in the field, we've established strong relationships with educational institutions and employers worldwide, enabling us to offer exclusive opportunities to our clients.
+                    </p>
+                </div>
+                
+                <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-600">Contact Persons</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-user text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Amir</h4>
+                                <a href="tel:+923135680620" class="text-blue-600 hover:underline">+92-313-5680620</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-user text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Tufail Ahmed</h4>
+                                <a href="tel:+923149967945" class="text-blue-600 hover:underline">+92-314-9967945</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-user text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Khuzaifa</h4>
+                                <a href="tel:+923480099889" class="text-blue-600 hover:underline">+92-348-0099889</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-2">Office Location</h4>
+                        <p class="text-gray-700">Mardan-Swabi Road, Shewa Adda, Malak Sardar Plaza, Near UBL Bank</p>
+                        
+                        <div class="mt-4">
+                            <a href="https://maps.google.com" target="_blank" class="text-blue-600 hover:underline flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2"></i> View on Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Get In Touch</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Have questions about our services? Contact us today and our team will be happy to assist you.</p>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form id="contact-form" class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-sm h-full">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-600">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Phone Numbers</h4>
+                                    <div class="space-y-2">
+                                        <p><a href="tel:+923135680620" class="text-blue-600 hover:underline">+92-313-5680620 (Amir)</a></p>
+                                        <p><a href="tel:+923149967945" class="text-blue-600 hover:underline">+92-314-9967945 (Tufail Ahmed)</a></p>
+                                        <p><a href="tel:+923480099889" class="text-blue-600 hover:underline">+92-348-0099889 (Khuzaifa)</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Office Address</h4>
+                                    <p class="text-gray-700">Mardan-Swabi Road, Shewa Adda, Malak Sardar Plaza, Near UBL Bank</p>
+                                    <a href="https://maps.google.com" target="_blank" class="text-blue-600 hover:underline mt-2 inline-block">
+                                        <i class="fas fa-directions mr-1"></i> Get Directions
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fab fa-whatsapp text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">WhatsApp</h4>
+                                    <a href="https://wa.me/923135680620" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg inline-flex items-center hover:bg-green-600 transition duration-300">
+                                        <i class="fab fa-whatsapp mr-2"></i> Chat with Us
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Working Hours</h4>
+                                    <p class="text-gray-700">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-700">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-600 text-white p-2 rounded-lg mr-3">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Trimate <span class="text-blue-400">Consultancy</span></h3>
+                    </div>
+                    <p class="text-gray-300 max-w-xs">Your trusted partner for overseas education and work opportunities.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-blue-400">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                            <li><a href="#countries" class="text-gray-300 hover:text-white transition duration-300">Countries</a></li>
+                            <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                            <li><a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-blue-400">Services</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-300">Student Visa Assistance</li>
+                            <li class="text-gray-300">Work Permit Processing</li>
+                            <li class="text-gray-300">Documentation Support</li>
+                            <li class="text-gray-300">Career Counseling</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-blue-400">Connect With Us</h4>
+                        <div class="flex space-x-4 mb-4">
+                            <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/923135680620" target="_blank" class="bg-gray-700 hover:bg-green-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-300">info@trimateconsultancy.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Trimate Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Highlight active navigation link
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active-nav', 'text-blue-600');
+                link.classList.add('text-gray-600');
+                
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active-nav', 'text-blue-600');
+                    link.classList.remove('text-gray-600');
+                }
+            });
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert('Thank you for your message! We will contact you soon.');
+            contactForm.reset();
+        });
+        
+        // Add Country Button functionality (for future expansion)
+        const addCountryBtn = document.getElementById('add-country-btn');
+        
+        // This would be used when implementing the admin interface to add new countries
+        addCountryBtn.addEventListener('click', () => {
+            // In a real implementation, this would open a form to add a new country
+            alert('Add new country functionality would be implemented here.');
+        });
+    </script>
+</body>
+</html>
