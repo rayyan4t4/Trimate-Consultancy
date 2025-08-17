@@ -9,64 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Custom Font */
-        body {
-            font-family: 'Poppins', sans-serif;
-            /* UPDATED: New background image for better text visibility */
-            background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-        }
-
-        /* Glassmorphism Effect Class */
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.05); /* Slightly reduced opacity for better contrast */
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
-        }
-
-        /* Card Hover Effect */
-        .country-card {
-            transition: all 0.3s ease-in-out;
-        }
-        .country-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Navigation Link Underline Effect */
-        .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -4px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #3b82f6; /* Blue-500 */
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after,
-        .active-nav::after {
-            width: 100%;
-        }
-        
-        /* Heading Text Shadow for Readability */
-        .text-shadow {
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="text-gray-100">
-
     <header class="glass-effect sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center">
@@ -77,10 +22,10 @@
             </div>
             
             <nav class="hidden md:flex space-x-8">
-                <a href="#home" class="nav-link active-nav text-white font-medium">Home</a>
-                <a href="#countries" class="nav-link text-gray-300 hover:text-white font-medium">Opportunities</a>
-                <a href="#about" class="nav-link text-gray-300 hover:text-white font-medium">About Us</a>
-                <a href="#contact" class="nav-link text-gray-300 hover:text-white font-medium">Contact</a>
+                <a href="index.html" class="nav-link active-nav text-white font-medium">Home</a>
+                <a href="opportunities.html" class="nav-link text-gray-300 hover:text-white font-medium">Opportunities</a>
+                <a href="about.html" class="nav-link text-gray-300 hover:text-white font-medium">About Us</a>
+                <a href="contact.html" class="nav-link text-gray-300 hover:text-white font-medium">Contact</a>
             </nav>
             
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -90,10 +35,10 @@
         
         <div id="mobile-menu" class="hidden md:hidden glass-effect">
             <div class="flex flex-col space-y-4 p-6">
-                <a href="#home" class="text-gray-200 hover:text-white font-medium">Home</a>
-                <a href="#countries" class="text-gray-200 hover:text-white">Opportunities</a>
-                <a href="#about" class="text-gray-200 hover:text-white">About Us</a>
-                <a href="#contact" class="text-gray-200 hover:text-white">Contact</a>
+                <a href="index.html" class="text-gray-200 hover:text-white font-medium">Home</a>
+                <a href="opportunities.html" class="text-gray-200 hover:text-white">Opportunities</a>
+                <a href="about.html" class="text-gray-200 hover:text-white">About Us</a>
+                <a href="contact.html" class="text-gray-200 hover:text-white">Contact</a>
             </div>
         </div>
     </header>
@@ -103,162 +48,14 @@
             <div class="max-w-4xl mx-auto">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white text-shadow leading-tight">Unlock Your Global Future with Trimat</h1>
                 <p class="text-lg md:text-xl mb-8 text-gray-200 text-shadow">Your trusted partner for overseas education and work opportunities. Let us guide you to your dream destination.</p>
-                <a href="#countries" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300 inline-block shadow-lg">
+                <a href="opportunities.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300 inline-block shadow-lg">
                     Explore Opportunities <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="countries" class="py-24">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow">Available Opportunities</h2>
-                <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">Explore our visa and study programs. We're constantly adding new paths to your future.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
-                    <div class="bg-gradient-to-r from-blue-600 to-blue-500 py-4 px-6">
-                        <h3 class="text-xl font-bold">Romania & Georgia - Student Visa</h3>
-                    </div>
-                    <div class="p-6">
-                        <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">14–15 lakh PKR</p></div>
-                            <div><p class="text-sm text-gray-300">Advance</p><p class="font-semibold text-lg">1.5 lakh PKR</p></div>
-                        </div>
-                        <h4 class="font-bold mb-2">Documents Required:</h4>
-                        <ul class="list-disc pl-5 space-y-1 mb-6 text-gray-200 text-sm">
-                            <li>SSC & HSSC Certificates + DMCs</li>
-                            <li>FRC & Birth Certificate</li>
-                            <li>Police Clearance Certificate</li>
-                            <li><span class="font-semibold">For Master's:</span> Bachelor's Degree + Transcript</li>
-                        </ul>
-                        <div class="bg-blue-500/30 p-4 rounded-lg text-sm">
-                            <p><i class="fas fa-info-circle mr-2"></i>All documents must be attested by IBCC, MOFA, and apostilled.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
-                    <div class="bg-gradient-to-r from-purple-600 to-purple-500 py-4 px-6">
-                        <h3 class="text-xl font-bold">Germany - Work Permit</h3>
-                    </div>
-                    <div class="p-6">
-                        <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">48 lakh PKR</p></div>
-                            <div><p class="text-sm text-gray-300">Advance</p><p class="font-semibold text-lg">5 lakh PKR</p></div>
-                            <div><p class="text-sm text-gray-300">Time</p><p class="font-semibold text-lg">6 months</p></div>
-                            <div><p class="text-sm text-gray-300">Duration</p><p class="font-semibold text-lg">1–2 years</p></div>
-                        </div>
-                        <h4 class="font-bold mb-2">Requirements:</h4>
-                        <ul class="list-disc pl-5 space-y-1 text-gray-200 text-sm">
-                            <li>Valid Passport & Financial Proof</li>
-                            <li>Professional Qualifications/Experience</li>
-                            <li>Health Insurance & Clean Criminal Record</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
-                    <div class="bg-gradient-to-r from-teal-600 to-teal-500 py-4 px-6">
-                        <h3 class="text-xl font-bold">Turkey - Work Permit</h3>
-                    </div>
-                    <div class="p-6">
-                        <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">13.5 lakh PKR</p></div>
-                            <div><p class="text-sm text-gray-300">Visa Type</p><p class="font-semibold text-lg">Welder Visa</p></div>
-                        </div>
-                        <h4 class="font-bold mb-2">Key Information:</h4>
-                        <ul class="list-disc pl-5 space-y-1 mb-6 text-gray-200 text-sm">
-                            <li>Selection via video submission</li>
-                            <li>Work video required from applicant</li>
-                            <li class="font-semibold">Includes free food, accommodation, & medical</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-24">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow">About Trimat Consultancy</h2>
-            </div>
-            
-            <div class="glass-effect rounded-xl p-8 md:p-12">
-                <div class="flex flex-col lg:flex-row items-center gap-12">
-                    <div class="lg:w-1/2">
-                        <h3 class="text-2xl font-semibold mb-4 text-blue-400">Our Mission</h3>
-                        <p class="text-gray-200 mb-4 leading-relaxed">
-                            At Trimat Consultancy, we are committed to providing reliable and professional guidance to students and professionals. Our experienced consultants work tirelessly to ensure you receive the best possible support throughout your journey to study or work abroad.
-                        </p>
-                        <p class="text-gray-200 leading-relaxed">
-                            With strong relationships with institutions and employers worldwide, we offer exclusive opportunities and a streamlined path to achieving your goals.
-                        </p>
-                    </div>
-                    
-                    <div class="lg:w-1/2 w-full bg-black/20 p-8 rounded-lg">
-                        <h3 class="text-2xl font-semibold mb-6 text-teal-400">Contact Persons</h3>
-                        <div class="space-y-4 text-gray-200">
-                            <div class="flex items-center"><i class="fas fa-user-tie w-6 text-teal-400"></i><div><span class="font-bold">Aamir:</span> <a href="tel:+923135680620" class="hover:underline ml-2">+92-313-5680620</a></div></div>
-                            <div class="flex items-center"><i class="fas fa-user-tie w-6 text-teal-400"></i><div><span class="font-bold">Tufail Ahmed:</span> <a href="tel:+923149967945" class="hover:underline ml-2">+92-314-9967945</a></div></div>
-                            <div class="flex items-center"><i class="fas fa-user-tie w-6 text-teal-400"></i><div><span class="font-bold">Khuzaifa:</span> <a href="tel:+923480099889" class="hover:underline ml-2">+92-348-0099889</a></div></div>
-                        </div>
-                        <div class="mt-8 pt-6 border-t border-white/20">
-                            <h4 class="font-bold mb-2 flex items-center"><i class="fas fa-map-marker-alt mr-3 text-teal-400"></i>Office Location</h4>
-                            <p class="text-gray-300 text-sm">Mardan-Swabi Road, Shewa Adda, Malak Sardar Plaza, Near UBL Bank</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-24">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow">Get In Touch</h2>
-                <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">Have questions? Fill out the form below or use our contact details to reach us directly.</p>
-            </div>
-            
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="lg:w-1/2 w-full glass-effect rounded-xl p-8">
-                    <form action="https://formspree.io/f/xvgqnkre" method="POST">
-                        <div class="mb-5">
-                            <label for="name" class="block font-medium mb-2">Full Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-black/20 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                        </div>
-                        <div class="mb-5">
-                            <label for="email" class="block font-medium mb-2">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-black/20 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                        </div>
-                        <div class="mb-5">
-                            <label for="message" class="block font-medium mb-2">Your Message</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-black/20 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
-                        </div>
-                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 w-full shadow-lg">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-                
-                <div class="lg:w-1/2 w-full flex flex-col justify-center">
-                    <div class="space-y-6">
-                        <div class="flex items-start"><div class="p-3 bg-white/10 rounded-full mr-4"><i class="fas fa-phone text-blue-400 text-xl"></i></div><div><h4 class="font-bold text-lg mb-1">Phone Numbers</h4><p class="text-gray-300">Call any of our consultants for direct assistance.</p></div></div>
-                        <div class="flex items-start"><div class="p-3 bg-white/10 rounded-full mr-4"><i class="fas fa-map-marker-alt text-blue-400 text-xl"></i></div><div><h4 class="font-bold text-lg mb-1">Our Office</h4><p class="text-gray-300">Shewa Adda, Malak Sardar Plaza</p></div></div>
-                        <div class="flex items-start"><div class="p-3 bg-white/10 rounded-full mr-4"><i class="fas fa-clock text-blue-400 text-xl"></i></div><div><h4 class="font-bold text-lg mb-1">Working Hours</h4><p class="text-gray-300">Sat - Thu : 9:00 AM - 6:00 PM (Friday Closed)</p></div></div>
-                    </div>
-                     <div class="mt-8">
-                        <a href="https://wa.me/923135680620" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg inline-flex items-center hover:bg-green-600 transition duration-300 shadow-lg">
-                            <i class="fab fa-whatsapp mr-3 text-xl"></i> Chat with Us on WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Other sections can be added here if needed -->
 
     <footer class="bg-black/30 text-white py-12 mt-16">
         <div class="container mx-auto px-6">
@@ -279,43 +76,6 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu on link click
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Active Navigation Link Highlighting on Scroll
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('header nav a');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 150) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active-nav', 'text-white');
-                link.classList.add('text-gray-300');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active-nav', 'text-white');
-                    link.classList.remove('text-gray-300');
-                }
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
