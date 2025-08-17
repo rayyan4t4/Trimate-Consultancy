@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunities - Trimat Consultancy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-100">
+    <header class="glass-effect sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-blue-600 text-white p-2 rounded-lg mr-3 shadow-lg">
+                    <i class="fas fa-globe-americas text-2xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-white tracking-wider">Trimat<span class="text-blue-400">Consultancy</span></h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-white font-medium">Home</a>
+                <a href="opportunities.html" class="nav-link active-nav text-white font-medium">Opportunities</a>
+                <a href="about.html" class="nav-link text-gray-300 hover:text-white font-medium">About Us</a>
+                <a href="contact.html" class="nav-link text-gray-300 hover:text-white font-medium">Contact</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden glass-effect">
+            <div class="flex flex-col space-y-4 p-6">
+                <a href="index.html" class="text-gray-200 hover:text-white font-medium">Home</a>
+                <a href="opportunities.html" class="text-gray-200 hover:text-white">Opportunities</a>
+                <a href="about.html" class="text-gray-200 hover:text-white">About Us</a>
+                <a href="contact.html" class="text-gray-200 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="countries" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow">Available Opportunities</h2>
+                <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">Explore our visa and study programs. We're constantly adding new paths to your future.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-500 py-4 px-6">
+                        <h3 class="text-xl font-bold">Romania - Student Visa</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">14–15 lakh PKR</p></div>
+                            <div><p class="text-sm text-gray-300">Advance</p><p class="font-semibold text-lg">1.5 lakh PKR</p></div>
+                        </div>
+                        <h4 class="font-bold mb-2">Documents Required:</h4>
+                        <ul class="list-disc pl-5 space-y-1 mb-6 text-gray-200 text-sm">
+                            <li>SSC & HSSC Certificates + DMCs</li>
+                            <li>FRC & Birth Certificate</li>
+                            <li>Police Clearance Certificate</li>
+                            <li><span class="font-semibold">For Master's:</span> Bachelor's Degree + Transcript</li>
+                        </ul>
+                        <div class="bg-blue-500/30 p-4 rounded-lg text-sm">
+                            <p><i class="fas fa-info-circle mr-2"></i>All documents must be attested by IBCC, MOFA, and apostilled.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-500 py-4 px-6">
+                        <h3 class="text-xl font-bold">Germany - Work Permit</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">48 lakh PKR</p></div>
+                            <div><p class="text-sm text-gray-300">Advance</p><p class="font-semibold text-lg">5 lakh PKR</p></div>
+                            <div><p class="text-sm text-gray-300">Time</p><p class="font-semibold text-lg">6 months</p></div>
+                            <div><p class="text-sm text-gray-300">Duration</p><p class="font-semibold text-lg">1–2 years</p></div>
+                        </div>
+                        <h4 class="font-bold mb-2">Requirements:</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-200 text-sm">
+                            <li>Valid Passport & Financial Proof</li>
+                            <li>Professional Qualifications/Experience</li>
+                            <li>Health Insurance & Clean Criminal Record</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
+                    <div class="bg-gradient-to-r from-teal-600 to-teal-500 py-4 px-6">
+                        <h3 class="text-xl font-bold">Turkey - Work Permit</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">13.5 lakh PKR</p></div>
+                            <div><p class="text-sm text-gray-300">Visa Type</p><p class="font-semibold text-lg">Welder Visa</p></div>
+                        </div>
+                        <h4 class="font-bold mb-2">Key Information:</h4>
+                        <ul class="list-disc pl-5 space-y-1 mb-6 text-gray-200 text-sm">
+                            <li>Selection via video submission</li>
+                            <li>Work video required from applicant</li>
+                            <li class="font-semibold">Includes free food, accommodation, & medical</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black/30 text-white py-12 mt-16">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

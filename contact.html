@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Trimat Consultancy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-100">
+    <header class="glass-effect sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-blue-600 text-white p-2 rounded-lg mr-3 shadow-lg">
+                    <i class="fas fa-globe-americas text-2xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-white tracking-wider">Trimat<span class="text-blue-400">Consultancy</span></h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-white font-medium">Home</a>
+                <a href="opportunities.html" class="nav-link text-gray-300 hover:text-white font-medium">Opportunities</a>
+                <a href="about.html" class="nav-link text-gray-300 hover:text-white font-medium">About Us</a>
+                <a href="contact.html" class="nav-link active-nav text-white font-medium">Contact</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden glass-effect">
+            <div class="flex flex-col space-y-4 p-6">
+                <a href="index.html" class="text-gray-200 hover:text-white font-medium">Home</a>
+                <a href="opportunities.html" class="text-gray-200 hover:text-white">Opportunities</a>
+                <a href="about.html" class="text-gray-200 hover:text-white">About Us</a>
+                <a href="contact.html" class="text-gray-200 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow">Get In Touch</h2>
+                <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">Have questions? Fill out the form below or use our contact details to reach us directly.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2 w-full glass-effect rounded-xl p-8">
+                    <form action="https://formspree.io/f/mzzvqzev" method="POST">
+                        <div class="mb-5">
+                            <label for="name" class="block font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-black/20 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="block font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-black/20 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="message" class="block font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-black/20 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 w-full shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2 w-full flex flex-col justify-center">
+                    <div class="space-y-6">
+                        <div class="flex items-start"><div class="p-3 bg-white/10 rounded-full mr-4"><i class="fas fa-phone text-blue-400 text-xl"></i></div><div><h4 class="font-bold text-lg mb-1">Phone Numbers</h4><p class="text-gray-300">Call any of our consultants for direct assistance.</p></div></div>
+                        <div class="flex items-start"><div class="p-3 bg-white/10 rounded-full mr-4"><i class="fas fa-map-marker-alt text-blue-400 text-xl"></i></div><div><h4 class="font-bold text-lg mb-1">Our Office</h4><p class="text-gray-300">Shewa Adda, Malak Sardar Plaza</p></div></div>
+                        <div class="flex items-start"><div class="p-3 bg-white/10 rounded-full mr-4"><i class="fas fa-clock text-blue-400 text-xl"></i></div><div><h4 class="font-bold text-lg mb-1">Working Hours</h4><p class="text-gray-300">Sat - Thu : 9:00 AM - 6:00 PM (Friday Closed)</p></div></div>
+                    </div>
+                     <div class="mt-8">
+                        <a href="https://wa.me/923135680620" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg inline-flex items-center hover:bg-green-600 transition duration-300 shadow-lg">
+                            <i class="fab fa-whatsapp mr-3 text-xl"></i> Chat with Us on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black/30 text-white py-12 mt-16">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

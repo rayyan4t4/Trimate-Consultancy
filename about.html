@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Trimat Consultancy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-100">
+    <header class="glass-effect sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-blue-600 text-white p-2 rounded-lg mr-3 shadow-lg">
+                    <i class="fas fa-globe-americas text-2xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-white tracking-wider">Trimat<span class="text-blue-400">Consultancy</span></h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-white font-medium">Home</a>
+                <a href="opportunities.html" class="nav-link text-gray-300 hover:text-white font-medium">Opportunities</a>
+                <a href="about.html" class="nav-link active-nav text-white font-medium">About Us</a>
+                <a href="contact.html" class="nav-link text-gray-300 hover:text-white font-medium">Contact</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden glass-effect">
+            <div class="flex flex-col space-y-4 p-6">
+                <a href="index.html" class="text-gray-200 hover:text-white font-medium">Home</a>
+                <a href="opportunities.html" class="text-gray-200 hover:text-white">Opportunities</a>
+                <a href="about.html" class="text-gray-200 hover:text-white">About Us</a>
+                <a href="contact.html" class="text-gray-200 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow">About Trimat Consultancy</h2>
+            </div>
+            
+            <div class="glass-effect rounded-xl p-8 md:p-12">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-400">Our Mission</h3>
+                        <p class="text-gray-200 mb-4 leading-relaxed">
+                            At Trimat Consultancy, we are committed to providing reliable and professional guidance to students and professionals. Our experienced consultants work tirelessly to ensure you receive the best possible support throughout your journey to study or work abroad.
+                        </p>
+                        <p class="text-gray-200 leading-relaxed">
+                            With strong relationships with institutions and employers worldwide, we offer exclusive opportunities and a streamlined path to achieving your goals.
+                        </p>
+                    </div>
+                    
+                    <div class="lg:w-1/2 w-full bg-black/20 p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-teal-400">Contact Persons</h3>
+                        <div class="space-y-4 text-gray-200">
+                            <div class="flex items-center"><i class="fas fa-user-tie w-6 text-teal-400"></i><div><span class="font-bold">Aamir:</span> <a href="tel:+923135680620" class="hover:underline ml-2">+92-313-5680620</a></div></div>
+                            <div class="flex items-center"><i class="fas fa-user-tie w-6 text-teal-400"></i><div><span class="font-bold">Tufail Ahmed:</span> <a href="tel:+923149967945" class="hover:underline ml-2">+92-314-9967945</a></div></div>
+                            <div class="flex items-center"><i class="fas fa-user-tie w-6 text-teal-400"></i><div><span class="font-bold">Khuzaifa:</span> <a href="tel:+923480099889" class="hover:underline ml-2">+92-348-0099889</a></div></div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-white/20">
+                            <h4 class="font-bold mb-2 flex items-center"><i class="fas fa-map-marker-alt mr-3 text-teal-400"></i>Office Location</h4>
+                            <p class="text-gray-300 text-sm">Mardan-Swabi Road, Shewa Adda, Malak Sardar Plaza, Near UBL Bank</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black/30 text-white py-12 mt-16">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
