@@ -10,8 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#1e40af',
+                        accent: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="text-gray-100">
+<body class="text-gray-100 font-poppins">
     <header class="glass-effect sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center">
@@ -24,6 +40,7 @@
             <nav class="hidden md:flex space-x-8">
                 <a href="index.html" class="nav-link text-gray-300 hover:text-white font-medium">Home</a>
                 <a href="opportunities.html" class="nav-link active-nav text-white font-medium">Opportunities</a>
+                <a href="apply.html" class="nav-link text-gray-300 hover:text-white font-medium">Apply Now</a>
                 <a href="about.html" class="nav-link text-gray-300 hover:text-white font-medium">About Us</a>
                 <a href="contact.html" class="nav-link text-gray-300 hover:text-white font-medium">Contact</a>
             </nav>
@@ -43,81 +60,278 @@
         </div>
     </header>
 
-    <section id="countries" class="py-24">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow">Available Opportunities</h2>
-                <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">Explore our visa and study programs. We're constantly adding new paths to your future.</p>
+    <section id="countries" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow">Global Opportunities</h2>
+                <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">Discover your path to international education and career growth</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
-                    <div class="bg-gradient-to-r from-blue-600 to-blue-500 py-4 px-6">
+            <!-- Filter Section -->
+            <div class="glass-effect p-6 rounded-xl mb-12">
+                <h3 class="text-xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-filter mr-2 text-blue-400"></i> Filter Opportunities
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block mb-2 text-sm font-medium">Country</label>
+                        <select class="filter-select w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:ring-2 focus:ring-blue-500">
+                            <option value="all">All Countries</option>
+                            <option value="romania">Romania</option>
+                            <option value="germany">Germany</option>
+                            <option value="turkey">Turkey</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-sm font-medium">Program Type</label>
+                        <select class="filter-select w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:ring-2 focus:ring-blue-500">
+                            <option value="all">All Types</option>
+                            <option value="student">Student Visa</option>
+                            <option value="work">Work Permit</option>
+                            <option value="immigration">Immigration</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-sm font-medium">Duration</label>
+                        <select class="filter-select w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:ring-2 focus:ring-blue-500">
+                            <option value="all">Any Duration</option>
+                            <option value="short">Short Term (<1 year)</option>
+                            <option value="medium">Medium Term (1-3 years)</option>
+                            <option value="long">Long Term (3+ years)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Opportunities Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Romania Student Visa -->
+                <div class="country-card glass-effect rounded-xl overflow-hidden text-white border border-transparent hover:border-blue-400 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-500 py-4 px-6 flex items-center">
+                        <i class="fas fa-graduation-cap mr-3 text-xl"></i>
                         <h3 class="text-xl font-bold">Romania - Student Visa</h3>
                     </div>
                     <div class="p-6">
                         <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">14–15 lakh PKR</p></div>
-                            <div><p class="text-sm text-gray-300">Advance</p><p class="font-semibold text-lg">1.5 lakh PKR</p></div>
+                            <div>
+                                <p class="text-sm text-gray-300 flex items-center">
+                                    <i class="fas fa-wallet mr-2"></i> Total Cost
+                                </p>
+                                <p class="font-semibold text-lg">14–15 lakh PKR</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-300 flex items-center">
+                                    <i class="fas fa-hand-holding-usd mr-2"></i> Advance
+                                </p>
+                                <p class="font-semibold text-lg">1.5 lakh PKR</p>
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-2">Documents Required:</h4>
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 text-xs font-semibold px-2.5 py-0.5 rounded">Bachelor/Master</span>
+                            <span class="bg-green-500/20 text-green-400 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">EU Country</span>
+                        </div>
+                        
+                        <h4 class="font-bold mb-2 flex items-center">
+                            <i class="fas fa-file-alt mr-2"></i> Documents Required:
+                        </h4>
                         <ul class="list-disc pl-5 space-y-1 mb-6 text-gray-200 text-sm">
                             <li>SSC & HSSC Certificates + DMCs</li>
                             <li>FRC & Birth Certificate</li>
                             <li>Police Clearance Certificate</li>
                             <li><span class="font-semibold">For Master's:</span> Bachelor's Degree + Transcript</li>
                         </ul>
-                        <div class="bg-blue-500/30 p-4 rounded-lg text-sm">
-                            <p><i class="fas fa-info-circle mr-2"></i>All documents must be attested by IBCC, MOFA, and apostilled.</p>
+                        
+                        <div class="bg-blue-500/20 p-4 rounded-lg text-sm border border-blue-500/30">
+                            <p class="flex items-start">
+                                <i class="fas fa-info-circle mr-2 mt-1 text-blue-400"></i>
+                                <span>All documents must be attested by IBCC, MOFA, and apostilled.</span>
+                            </p>
                         </div>
+                        
+                        <a href="apply.html">
+    <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+        <i class="far fa-envelope-open mr-2"></i> Apply Now
+    </button>
+</a>
                     </div>
                 </div>
                 
-                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
-                    <div class="bg-gradient-to-r from-purple-600 to-purple-500 py-4 px-6">
+                <!-- Germany Work Permit -->
+                <div class="country-card glass-effect rounded-xl overflow-hidden text-white border border-transparent hover:border-purple-400 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-500 py-4 px-6 flex items-center">
+                        <i class="fas fa-briefcase mr-3 text-xl"></i>
                         <h3 class="text-xl font-bold">Germany - Work Permit</h3>
                     </div>
                     <div class="p-6">
                         <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">48 lakh PKR</p></div>
-                            <div><p class="text-sm text-gray-300">Advance</p><p class="font-semibold text-lg">5 lakh PKR</p></div>
-                            <div><p class="text-sm text-gray-300">Time</p><p class="font-semibold text-lg">6 months</p></div>
-                            <div><p class="text-sm text-gray-300">Duration</p><p class="font-semibold text-lg">1–2 years</p></div>
+                            <div>
+                                <p class="text-sm text-gray-300 flex items-center">
+                                    <i class="fas fa-wallet mr-2"></i> Total Cost
+                                </p>
+                                <p class="font-semibold text-lg">48 lakh PKR</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-300 flex items-center">
+                                    <i class="fas fa-hand-holding-usd mr-2"></i> Advance
+                                </p>
+                                <p class="font-semibold text-lg">5 lakh PKR</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-300 flex items-center">
+                                    <i class="fas fa-clock mr-2"></i> Processing
+                                </p>
+                                <p class="font-semibold text-lg">6 months</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-300 flex items-center">
+                                    <i class="fas fa-calendar-alt mr-2"></i> Duration
+                                </p>
+                                <p class="font-semibold text-lg">1–2 years</p>
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-2">Requirements:</h4>
-                        <ul class="list-disc pl-5 space-y-1 text-gray-200 text-sm">
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="bg-purple-500/20 text-purple-400 text-xs font-semibold px-2.5 py-0.5 rounded">Skilled Worker</span>
+                            <span class="bg-green-500/20 text-green-400 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">EU Blue Card</span>
+                        </div>
+                        
+                        <h4 class="font-bold mb-2 flex items-center">
+                            <i class="fas fa-clipboard-check mr-2"></i> Requirements:
+                        </h4>
+                        <ul class="list-disc pl-5 space-y-1 mb-6 text-gray-200 text-sm">
                             <li>Valid Passport & Financial Proof</li>
                             <li>Professional Qualifications/Experience</li>
                             <li>Health Insurance & Clean Criminal Record</li>
+                            <li>Job Offer from German Employer</li>
                         </ul>
+                        
+                        <a href="apply.html">
+                            <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                                 <i class="far fa-envelope-open mr-2"></i> Apply Now
+                            </button>
+                        </a>
                     </div>
                 </div>
 
-                <div class="country-card glass-effect rounded-xl overflow-hidden text-white">
-                    <div class="bg-gradient-to-r from-teal-600 to-teal-500 py-4 px-6">
-                        <h3 class="text-xl font-bold">Turkey - Work Permit</h3>
+                <!-- Turkey Work Permit -->
+                <div class="country-card glass-effect rounded-xl overflow-hidden text-white border border-transparent hover:border-teal-400 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-teal-600 to-teal-500 py-4 px-6 flex items-center">
+                        <i class="fas fa-tools mr-3 text-xl"></i>
+                        <h3 class="text-xl font-bold">Turkey - Welder Visa</h3>
                     </div>
                     <div class="p-6">
                         <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div><p class="text-sm text-gray-300">Total Cost</p><p class="font-semibold text-lg">13.5 lakh PKR</p></div>
-                            <div><p class="text-sm text-gray-300">Visa Type</p><p class="font-semibold text-lg">Welder Visa</p></div>
+                            <div>
+                                <p class="text-sm text-gray-300 flex items-center">
+                                    <i class="fas fa-wallet mr-2"></i> Total Cost
+                                </p>
+                                <p class="font-semibold text-lg">13.5 lakh PKR</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-300 flex items-center">
+                                    <i class="fas fa-clock mr-2"></i> Processing
+                                </p>
+                                <p class="font-semibold text-lg">3-4 months</p>
+                            </div>
                         </div>
-                        <h4 class="font-bold mb-2">Key Information:</h4>
+                        
+                        <div class="flex items-center mb-4">
+                            <span class="bg-teal-500/20 text-teal-400 text-xs font-semibold px-2.5 py-0.5 rounded">Skilled Trade</span>
+                            <span class="bg-yellow-500/20 text-yellow-400 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Benefits Included</span>
+                        </div>
+                        
+                        <h4 class="font-bold mb-2 flex items-center">
+                            <i class="fas fa-info-circle mr-2"></i> Key Information:
+                        </h4>
                         <ul class="list-disc pl-5 space-y-1 mb-6 text-gray-200 text-sm">
                             <li>Selection via video submission</li>
                             <li>Work video required from applicant</li>
-                            <li class="font-semibold">Includes free food, accommodation, & medical</li>
+                            <li class="font-semibold text-teal-300">Includes free food, accommodation & medical</li>
+                            <li>2-year renewable contract</li>
                         </ul>
+                        
+                        <div class="bg-teal-500/20 p-4 rounded-lg text-sm border border-teal-500/30 mb-4">
+                            <p class="flex items-start">
+                                <i class="fas fa-star mr-2 mt-1 text-yellow-400"></i>
+                                <span>Basic Turkish language training provided upon arrival</span>
+                            </p>
+                        </div>
+                        
+                        <a href="apply.html">
+                            <button class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                                <i class="far fa-envelope-open mr-2"></i> Apply Now
+                            </button>
                     </div>
                 </div>
+                
+                <!-- Additional Opportunity Cards Can Be Added Here -->
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="glass-effect rounded-xl p-8 md:p-12 mt-16 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Don't See Your Preferred Opportunity?</h3>
+                <p class="text-gray-300 mb-6 max-w-2xl mx-auto">We're constantly adding new programs and countries. Contact us for personalized recommendations based on your profile.</p>
+                <a href="contact.html" class="inline-block bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300 shadow-lg">
+                    Contact Our Advisors <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <footer class="bg-black/30 text-white py-12 mt-16">
-        <!-- Same footer as index.html -->
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold">Trimat <span class="text-blue-400">Consultancy</span></h3>
+                    <p class="text-gray-400 text-sm mt-1">Your Gateway to Global Education & Career</p>
+                </div>
+                <div class="flex space-x-4 mb-6 md:mb-0">
+                    <a href="#" class="bg-white/10 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-white/10 hover:bg-sky-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="bg-white/10 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/923135680620" target="_blank" class="bg-white/10 hover:bg-green-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Trimat Consultancy. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Enhanced Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterSelects = document.querySelectorAll('.filter-select');
+            
+            filterSelects.forEach(select => {
+                select.addEventListener('change', function() {
+                    // Filter logic would go here
+                    console.log(`Filtering by: ${this.value}`);
+                    // In a real implementation, you would filter the opportunity cards
+                });
+            });
+            
+            // Animate cards on scroll
+            const observerOptions = {
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeInUp');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.country-card').forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
 </body>
 </html>
