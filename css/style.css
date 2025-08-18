@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     /* UPDATED: New background image for better text visibility */
-    background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -50,4 +50,5 @@ body {
 /* Heading Text Shadow for Readability */
 .text-shadow {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+
 }
