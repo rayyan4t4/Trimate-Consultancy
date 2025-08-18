@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Standard favicon (works in 99% of browsers) -->
+<link rel="icon" type="image/png" href="favicon-32x32.png">
+<!-- Fallback for older browsers -->
+<link rel="shortcut icon" href="favicon-32x32.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trimat Consultancy - Overseas Education & Work Experts</title>
@@ -11,6 +14,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .infinite-scroll-container {
+            animation: scroll 30s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+        
+        .infinite-scroll-content {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .infinite-scroll-content:hover {
+            animation-play-state: paused;
+        }
+        
+        .country-flag {
+            width: 60px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            margin-bottom: 12px;
+        }
+        
+        .glass-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
 <body class="text-gray-100">
     <header class="glass-effect sticky top-0 z-50">
@@ -39,7 +80,6 @@
             <div class="flex flex-col space-y-4 p-6">
                 <a href="index.html" class="text-gray-200 hover:text-white font-medium">Home</a>
                 <a href="opportunities.html" class="text-gray-200 hover:text-white">Opportunities</a>
-                <a href="apply.html" class="text-gray-200 hover:text-white">Apply Now</a>
                 <a href="about.html" class="text-gray-200 hover:text-white">About Us</a>
                 <a href="contact.html" class="text-gray-200 hover:text-white">Contact</a>
             </div>
@@ -58,7 +98,92 @@
         </div>
     </section>
 
-    <!-- Other sections can be added here if needed -->
+    <!-- Limited Events Section -->
+    <section class="py-16 bg-gradient-to-b from-blue-900/20 to-blue-950/30 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Limited Time <span class="text-blue-400">Opportunities</span></h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto glass-card rounded-xl p-6 shadow-xl">
+                <h3 class="text-2xl font-semibold text-white mb-6 text-center">Visits Available To:</h3>
+                
+                <div class="h-64 overflow-hidden relative">
+                    <div class="infinite-scroll-container">
+                        <div class="infinite-scroll-content">
+                            <!-- First set of countries -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/ro.png" class="country-flag mx-auto" alt="Romania Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">Romania</h4>
+                                    <p class="text-blue-200 italic">Discover the heart of Eastern Europe</p>
+                                </div>
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/nl.png" class="country-flag mx-auto" alt="Netherlands Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">Netherlands</h4>
+                                    <p class="text-blue-200 italic">Land of innovation and culture</p>
+                                </div>
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/hu.png" class="country-flag mx-auto" alt="Hungary Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">Hungary</h4>
+                                    <p class="text-blue-200 italic">Where tradition meets opportunity</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Second set of countries -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/al.png" class="country-flag mx-auto" alt="Albania Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">Albania</h4>
+                                    <p class="text-blue-200 italic">The hidden gem of the Balkans</p>
+                                </div>
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/ca.png" class="country-flag mx-auto" alt="Canada Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">Canada</h4>
+                                    <p class="text-blue-200 italic">Your gateway to North America</p>
+                                </div>
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/us.png" class="country-flag mx-auto" alt="USA Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">USA</h4>
+                                    <p class="text-blue-200 italic">Land of endless possibilities</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Duplicate for infinite scroll effect -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/ro.png" class="country-flag mx-auto" alt="Romania Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">Romania</h4>
+                                    <p class="text-blue-200 italic">Discover the heart of Eastern Europe</p>
+                                </div>
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/nl.png" class="country-flag mx-auto" alt="Netherlands Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">Netherlands</h4>
+                                    <p class="text-blue-200 italic">Land of innovation and culture</p>
+                                </div>
+                                <div class="glass-card p-6 rounded-lg text-center hover:bg-white/5 transition-all duration-300">
+                                    <img src="https://flagcdn.com/w80/hu.png" class="country-flag mx-auto" alt="Hungary Flag">
+                                    <h4 class="text-xl font-bold text-white mb-2">Hungary</h4>
+                                    <p class="text-blue-200 italic">Where tradition meets opportunity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="apply.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300 inline-block shadow-lg">
+                        Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 text-gray-300">
+                <p>Hurry! These opportunities are available for a limited time only.</p>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-black/30 text-white py-12 mt-16">
         <div class="container mx-auto px-6">
