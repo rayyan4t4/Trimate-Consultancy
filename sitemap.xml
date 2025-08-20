@@ -1,46 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- 
-    Sitemap for Trimat Consultancy
-    Generated on: 2025-08-20
-  -->
-
-  <!-- Homepage: Highest Priority -->
   <url>
-    <loc>https://trimatconsultancy.services/index.html</loc>
+    <loc>https://www.trimatconsultancy.services/index.html</loc>
     <lastmod>2025-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Core Service Pages: High Priority -->
   <url>
-    <loc>https://trimatconsultancy.services/opportunities.html</loc>
+    <loc>https://www.trimatconsultancy.services/opportunities.html</loc>
     <lastmod>2025-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://trimatconsultancy.services/about.html</loc>
+    <loc>https://www.trimatconsultancy.services/about.html</loc>
     <lastmod>2025-08-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Contact Page: Medium Priority -->
   <url>
-    <loc>https://trimatconsultancy.services/contact.html</loc>
+    <loc>https://www.trimatconsultancy.services/contact.html</loc>
     <lastmod>2025-08-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Application Form: Lower Priority (Important for users, but not a primary landing page from search) -->
   <url>
-    <loc>https://trimatconsultancy.services/apply.html</loc>
+    <loc>https://www.trimatconsultancy.services/apply.html</loc>
     <lastmod>2025-08-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-
 </urlset>
