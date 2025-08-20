@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply Now - Trimat Consultancy</title>
+
+    <title>Visa Application Form - Trimat Consultancy</title>
+    <meta name="description" content="Begin your journey to study or work abroad. Complete the secure application form to start the process with our expert consultants at Trimat Consultancy.">
+    <link rel="canonical" href="https://trimatconsultancy.services/apply.html" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trimatconsultancy.services/apply.html">
+    <meta property="og:title" content="Visa Application Form - Trimat Consultancy">
+    <meta property="og:description" content="Begin your journey to study or work abroad. Complete our secure application form to start the process with our expert consultants.">
+    <meta property="og:image" content="https://trimatconsultancy.services/images/social-preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://trimatconsultancy.services/apply.html">
+    <meta property="twitter:title" content="Visa Application Form - Trimat Consultancy">
+    <meta property="twitter:description" content="Begin your journey to study or work abroad. Complete our secure application form to start the process with our expert consultants.">
+    <meta property="twitter:image" content="https://trimatconsultancy.services/images/social-preview.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        poppins: ['Poppins', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#3b82f6',
-                        secondary: '#1e40af',
-                        accent: '#10b981',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 <body class="text-gray-100 font-poppins">
     <header class="glass-effect sticky top-0 z-50">
@@ -34,7 +33,7 @@
                 <div class="bg-blue-600 text-white p-2 rounded-lg mr-3 shadow-lg">
                     <i class="fas fa-globe-americas text-2xl"></i>
                 </div>
-                <h1 class="text-2xl font-bold text-white tracking-wider">Trimat<span class="text-blue-400">Consultancy</span></h1>
+                <div class="text-2xl font-bold text-white tracking-wider">Trimat<span class="text-blue-400">Consultancy</span></div>
             </a>
             
             <nav class="hidden md:flex space-x-8">
@@ -65,70 +64,43 @@
         <div class="container mx-auto px-4 md:px-6">
             <div class="glass-effect rounded-xl p-8 md:p-12 max-w-4xl mx-auto">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white text-shadow mb-2">Application Form</h2>
-                    <p class="text-lg text-gray-300">Complete this form to begin your application process</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-white text-shadow mb-2">Start Your Journey Today</h1>
+                    <p class="text-lg text-gray-300">Completing this form is the first step. One of our expert consultants will review your profile and contact you shortly.</p>
                 </div>
 
-                <!-- Program Selection (Hidden field that can be set from opportunities page) -->
-                <input type="hidden" id="program-selected" name="program" value="">
-
-                <!-- Application Form -->
                 <form action="https://formspree.io/f/mzzvqzev" method="POST" class="space-y-6">
-                    <!-- Personal Information Section -->
                     <div class="glass-effect p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4 text-blue-400 flex items-center">
+                        <h2 class="text-xl font-semibold mb-4 text-blue-400 flex items-center">
                             <i class="fas fa-user-circle mr-2"></i> Personal Information
-                        </h3>
+                        </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                                 <label for="full-name" class="block mb-2 text-sm font-medium">Full Name*</label>
-                                <input type="text" id="full-name" name="full-name" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="text" id="full-name" name="full-name" required class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div>
                                 <label for="email" class="block mb-2 text-sm font-medium">Email*</label>
-                                <input type="email" id="email" name="email" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="email" id="email" name="email" required class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div>
                                 <label for="phone" class="block mb-2 text-sm font-medium">Phone Number*</label>
-                                <input type="tel" id="phone" name="phone" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="tel" id="phone" name="phone" required class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div>
                                 <label for="dob" class="block mb-2 text-sm font-medium">Date of Birth*</label>
-                                <input type="date" id="dob" name="dob" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            </div>
-                            <div>
-                                <label for="country" class="block mb-2 text-sm font-medium">Current Country*</label>
-                                <select id="country" name="country" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                    <option value="">Select Country</option>
-                                    <option value="Pakistan">Pakistan</option>
-                                    <option value="India">India</option>
-                                    <option value="Bangladesh">Bangladesh</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="city" class="block mb-2 text-sm font-medium">City*</label>
-                                <input type="text" id="city" name="city" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="date" id="dob" name="dob" required class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                         </div>
                     </div>
 
-                    <!-- Program Information Section -->
                     <div class="glass-effect p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4 text-blue-400 flex items-center">
+                        <h2 class="text-xl font-semibold mb-4 text-blue-400 flex items-center">
                             <i class="fas fa-passport mr-2"></i> Program Information
-                        </h3>
+                        </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                                 <label for="program" class="block mb-2 text-sm font-medium">Program Applying For*</label>
-                                <select id="program" name="program" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <select id="program" name="program" required class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
                                     <option value="">Select Program</option>
                                     <option value="Romania - Student Visa">Romania - Student Visa</option>
                                     <option value="Germany - Work Permit">Germany - Work Permit</option>
@@ -138,83 +110,38 @@
                             </div>
                             <div>
                                 <label for="intake" class="block mb-2 text-sm font-medium">Preferred Intake*</label>
-                                <select id="intake" name="intake" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <select id="intake" name="intake" required class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
                                     <option value="">Select Intake</option>
-                                    <option value="Spring 2025">Spring 2025</option>
                                     <option value="Fall 2025">Fall 2025</option>
                                     <option value="Winter 2025">Winter 2025</option>
+                                    <option value="Spring 2026">Spring 2026</option>
+                                    <option value="Fall 2026">Fall 2026</option>
                                     <option value="Anytime">Anytime</option>
                                 </select>
                             </div>
-                            <div class="md:col-span-2">
-                                <label for="education" class="block mb-2 text-sm font-medium">Highest Education Level*</label>
-                                <select id="education" name="education" required
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                    <option value="">Select Education Level</option>
-                                    <option value="High School">High School</option>
-                                    <option value="Bachelor's Degree">Bachelor's Degree</option>
-                                    <option value="Master's Degree">Master's Degree</option>
-                                    <option value="PhD">PhD</option>
-                                    <option value="Diploma">Diploma</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
 
-                    <!-- Documents Section -->
                     <div class="glass-effect p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4 text-blue-400 flex items-center">
-                            <i class="fas fa-file-alt mr-2"></i> Documents Information
-                        </h3>
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block mb-2 text-sm font-medium">Documents Available*</label>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                    <label class="inline-flex items-center">
-                                        <input type="checkbox" name="documents[]" value="Passport" class="rounded bg-black/20 border-white/20">
-                                        <span class="ml-2">Passport</span>
-                                    </label>
-                                    <label class="inline-flex items-center">
-                                        <input type="checkbox" name="documents[]" value="Educational Certificates" class="rounded bg-black/20 border-white/20">
-                                        <span class="ml-2">Educational Certificates</span>
-                                    </label>
-                                    <label class="inline-flex items-center">
-                                        <input type="checkbox" name="documents[]" value="Transcripts" class="rounded bg-black/20 border-white/20">
-                                        <span class="ml-2">Transcripts</span>
-                                    </label>
-                                    <label class="inline-flex items-center">
-                                        <input type="checkbox" name="documents[]" value="Language Test" class="rounded bg-black/20 border-white/20">
-                                        <span class="ml-2">Language Test (IELTS/TOEFL)</span>
-                                    </label>
-                                    <label class="inline-flex items-center">
-                                        <input type="checkbox" name="documents[]" value="Work Experience" class="rounded bg-black/20 border-white/20">
-                                        <span class="ml-2">Work Experience Letters</span>
-                                    </label>
-                                    <label class="inline-flex items-center">
-                                        <input type="checkbox" name="documents[]" value="Financial Proof" class="rounded bg-black/20 border-white/20">
-                                        <span class="ml-2">Financial Proof</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="additional-info" class="block mb-2 text-sm font-medium">Additional Information</label>
-                                <textarea id="additional-info" name="additional-info" rows="3"
-                                    class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                            </div>
+                         <h2 class="text-xl font-semibold mb-4 text-blue-400 flex items-center">
+                            <i class="fas fa-file-alt mr-2"></i> Additional Details
+                        </h2>
+                        <div>
+                            <label for="additional-info" class="block mb-2 text-sm font-medium">Any questions or additional information?</label>
+                            <textarea id="additional-info" name="additional-info" rows="4" placeholder="Tell us about your qualifications, work experience, or specific questions you have..." class="w-full bg-black/20 border border-white/20 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                         </div>
                     </div>
+                    
+                    <div class="bg-black/20 border border-white/10 rounded-lg p-4 text-center">
+                        <h3 class="font-semibold text-white">What Happens Next?</h3>
+                        <p class="text-sm text-gray-300 mt-1">After submission, a consultant will contact you within 24-48 hours to discuss your profile and guide you on the next steps.</p>
+                        <p class="text-xs text-gray-400 mt-3 flex items-center justify-center">
+                            <i class="fas fa-lock mr-2"></i> Your information is confidential and will only be used for your application process.
+                        </p>
+                    </div>
 
-                    <!-- Terms and Submit -->
-                    <div class="flex flex-col md:flex-row items-center justify-between">
-                        <div class="mb-4 md:mb-0">
-                            <label class="inline-flex items-center">
-                                <input type="checkbox" required class="rounded bg-black/20 border-white/20">
-                                <span class="ml-2 text-sm">I agree to the <a href="#" class="text-blue-400 hover:underline">terms and conditions</a>*</span>
-                            </label>
-                        </div>
-                        <button type="submit" class="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 flex items-center">
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 flex items-center justify-center text-lg">
                             <i class="far fa-paper-plane mr-2"></i> Submit Application
                         </button>
                     </div>
@@ -223,21 +150,9 @@
         </div>
     </section>
 
-    <footer class="bg-black/30 text-white py-12 mt-16">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-                <div class="mb-6 md:mb-0">
-                    <h3 class="text-xl font-bold">Trimat <span class="text-blue-400">Consultancy</span></h3>
-                    <p class="text-gray-400 text-sm mt-1">Your Gateway to Global Education & Career</p>
-                </div>
-                <div class="flex space-x-4 mb-6 md:mb-0">
-                    <a href="#" class="bg-white/10 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="bg-white/10 hover:bg-sky-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="bg-white/10 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/923135680620" target="_blank" class="bg-white/10 hover:bg-green-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+    <footer class="bg-black/30 text-white py-12">
+       <div class="container mx-auto px-6">
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
                 <p>&copy; 2025 Trimat Consultancy. All rights reserved.</p>
             </div>
         </div>
@@ -245,39 +160,9 @@
 
     <script src="js/main.js"></script>
     <script>
-        // Set the program from URL parameter
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     // Get program from URL parameter
-        //     const urlParams = new URLSearchParams(window.location.search);
-        //     const program = urlParams.get('program');
-            
-        //     if (program) {
-        //         document.getElementById('program').value = program;
-        //         document.getElementById('program-selected').value = program;
-        //     }
-
-        //     // Mobile menu toggle
-        //     const mobileMenuButton = document.getElementById('mobile-menu-button');
-        //     const mobileMenu = document.getElementById('mobile-menu');
-        //     mobileMenuButton.addEventListener('click', () => {
-        //         mobileMenu.classList.toggle('hidden');
-        //     });
-
-        //     // Close mobile menu when clicking on links
-        //     document.querySelectorAll('#mobile-menu a').forEach(link => {
-        //         link.addEventListener('click', () => {
-        //             mobileMenu.classList.add('hidden');
-        //         });
-        //     });
-        // });
-
         // Form submission handling
         const form = document.querySelector('form');
         form.addEventListener('submit', function(e) {
-            // You can add form validation here if needed
-            // e.preventDefault(); // Uncomment to handle with AJAX
-            
-            // Show loading state
             const submitBtn = form.querySelector('button[type="submit"]');
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing...';
             submitBtn.disabled = true;
