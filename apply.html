@@ -54,7 +54,7 @@
             <div class="flex flex-col space-y-4 p-6">
                 <a href="index.html" class="text-gray-200 hover:text-white font-medium">Home</a>
                 <a href="opportunities.html" class="text-gray-200 hover:text-white">Opportunities</a>
-                <a href="apply.html" class="text-gray-200 hover:text-white">Apply Now</a>
+                <a href="apply.html" class="nav-link text-gray-300 hover:text-white font-medium">Apply Now</a>
                 <a href="about.html" class="text-gray-200 hover:text-white">About Us</a>
                 <a href="contact.html" class="text-gray-200 hover:text-white">Contact</a>
             </div>
@@ -73,7 +73,7 @@
                 <input type="hidden" id="program-selected" name="program" value="">
 
                 <!-- Application Form -->
-                <form action="https://formspree.io/f/xvgqnkre" method="POST" class="space-y-6">
+                <form action="https://formspree.io/f/mzzvqzev" method="POST" class="space-y-6">
                     <!-- Personal Information Section -->
                     <div class="glass-effect p-6 rounded-lg">
                         <h3 class="text-xl font-semibold mb-4 text-blue-400 flex items-center">
@@ -133,7 +133,6 @@
                                     <option value="Romania - Student Visa">Romania - Student Visa</option>
                                     <option value="Germany - Work Permit">Germany - Work Permit</option>
                                     <option value="Turkey - Welder Visa">Turkey - Welder Visa</option>
-                                    <option value="Turkey - Welder Visa">Apply For Visit</option>
                                     <option value="Other">Other (Specify in Message)</option>
                                 </select>
                             </div>
@@ -247,30 +246,30 @@
     <script src="js/main.js"></script>
     <script>
         // Set the program from URL parameter
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get program from URL parameter
-            const urlParams = new URLSearchParams(window.location.search);
-            const program = urlParams.get('program');
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     // Get program from URL parameter
+        //     const urlParams = new URLSearchParams(window.location.search);
+        //     const program = urlParams.get('program');
             
-            if (program) {
-                document.getElementById('program').value = program;
-                document.getElementById('program-selected').value = program;
-            }
+        //     if (program) {
+        //         document.getElementById('program').value = program;
+        //         document.getElementById('program-selected').value = program;
+        //     }
 
-            // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+        //     // Mobile menu toggle
+        //     const mobileMenuButton = document.getElementById('mobile-menu-button');
+        //     const mobileMenu = document.getElementById('mobile-menu');
+        //     mobileMenuButton.addEventListener('click', () => {
+        //         mobileMenu.classList.toggle('hidden');
+        //     });
 
-            // Close mobile menu when clicking on links
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-        });
+        //     // Close mobile menu when clicking on links
+        //     document.querySelectorAll('#mobile-menu a').forEach(link => {
+        //         link.addEventListener('click', () => {
+        //             mobileMenu.classList.add('hidden');
+        //         });
+        //     });
+        // });
 
         // Form submission handling
         const form = document.querySelector('form');
@@ -285,8 +284,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
-
